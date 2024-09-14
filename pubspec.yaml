@@ -1,0 +1,78 @@
+name: enjaz
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0-277.0.dev <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+  # ------------------------------  NETWORK  ------------------------------
+  dio: ^5.4.2+1
+  internet_connection_checker: ^1.0.0+1
+  connectivity_plus: ^6.0.5
+  #------------------------------ NO SQLITE ------------------------------
+  get_storage: ^2.1.1
+  #------------------------------ STATE MANAGEMENT ------------------------------
+  bloc: ^8.0.2
+  flutter_bloc: ^8.0.1
+  equatable: ^2.0.5
+  url_launcher: ^6.0.20
+#-------------------------------------------------------------------------------------
+  cupertino_icons: ^1.0.8
+  flutter_spinkit: ^5.1.0
+  fluttertoast: ^8.0.9
+  image_picker: ^1.0.7
+  flutter_launcher_icons: ^0.13.1
+  flutter_svg: ^2.0.10+1
+
+
+
+
+flutter_icons:
+  android: true
+  ios: true
+  web:
+    generate: false
+  windows:
+    generate: false
+  macos:
+    generate: false
+  remove_alpha_ios: true
+  image_path_ios: "assets/images/enjaz_ios_launcher.png"
+  image_path_android: "assets/images/enjaz_android_launcher.png"
+  adaptive_icon_foreground: "assets/images/enjaz_android_launcher.png"
+  adaptive_icon_background: "#3B50A1"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svg/
+    - assets/fonts/
+    - assets/lang/ar.json
+    - assets/lang/en.json
+
+
+  fonts:
+    - family: IBMPlexSansArabic
+      fonts:
+        - asset: assets/fonts/IBMPlexSansArabic-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/IBMPlexSansArabic-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/IBMPlexSansArabic-Bold.ttf
+          weight: 800
